@@ -1,3 +1,6 @@
 pydantic
 requests
 streamlit
+numpy          #專門做資料分析圖表
+pandas
+matplotlib
