@@ -1,4 +1,4 @@
-#按下Submit Button程式碼才會從頭到尾讀寫更改設定
+#與index7.py不同, 按下Submit Button程式碼才會從頭到尾讀寫更改設定
 
 import streamlit as st
 
