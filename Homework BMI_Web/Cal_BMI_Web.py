@@ -36,6 +36,6 @@ if submit:
     except ValueError:
         st.error("請確保您輸入的資料是否正確")
         
-col1, col2, col3 = 
+
 
 
