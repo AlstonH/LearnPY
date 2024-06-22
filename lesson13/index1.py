@@ -49,4 +49,4 @@ st.markdown(f'### :orange[{st.session_state.bmi_result}]')
 st.markdown(f'#### :black[{txt}]')
 
 st.session_state
-    
+
