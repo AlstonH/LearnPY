@@ -10,7 +10,7 @@ st.markdown('<h6 style="color:blue;text-align:center">52 (公斤) / 1.552 ( 公�
 st.markdown('<h6 style="color:orange;text-align:center">體重正常範圍為 BMI = 18.5～24</h6>', 
             unsafe_allow_html=True)
 
-st.markdown('<hr style="border:0;margin:0 auto;width:80%;border-top:2px dotted blue">',
+st.markdown('<hr style="border:0;margin:0 auto;width:100%;border-top:2px dotted blue">',
             unsafe_allow_html=True)
 
 st.markdown('<h6 style="color:purple;text-align:center">快看看自己的BMI是否在理想範圍吧!</h6>', 
