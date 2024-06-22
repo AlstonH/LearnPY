@@ -5,9 +5,9 @@ st.header("計算您的BMI:")
 st.markdown("BMI計算公式: 體重(kg) / (身高(m)^2)")
 
 with st.form("data"):
-    name = st.text_input("請輸入您的姓名:")
-    height = st.text_input("請輸入您的身高(cm):")
-    weight = st.text_input("請輸入您的體重(kg):")
+    name_val = st.text_input("請輸入您的姓名:")
+    height_val = st.text_input("請輸入您的身高(cm):")
+    weight_val = st.text_input("請輸入您的體重(kg):")
     
     submit = st.form_submit_button("送出")
     
@@ -27,13 +27,15 @@ def cal_bmi(bmi):
 
 if submit:
     try:
-        height = float(height) / 100
-        weight = float(weight)
+        height = float(height_val) / 100
+        weight = float(weight_val)
         bmi = round(weight/height**2,ndigits=2)
         result = cal_bmi(bmi)
-        st.write("您的姓名:",name,"您的身高:",height,"您的體重:",weight, "BMI", bmi)
+        st.write("您的姓名:",name_val, f"您的身高:{height_val}公分", f"您的體重:{weight_val}公斤", "您的BMI:", bmi)
         st.write(result)
     except ValueError:
-        st.error("請確保您輸入的是數字")
+        st.error("請確保您輸入的資料是否正確")
+        
+col1, col2, col3 = 
 
 
