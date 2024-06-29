@@ -25,8 +25,17 @@ else:
                 display_data.append(item)
         with tableContainer:
             df1 = pd.DataFrame(display_data,
-                                columns=['站點名稱','日期時間','地址','總數','可借','可還'])
+                                columns=['站點名稱','日期時間','地址','總數','可借','可還','經度','緯度'])
             st.dataframe(df1)
+            
+            df2 = pd.DataFrame(display_data,
+                                columns=['站點名稱','總數','可借','可還'])
+            st.scatter_chart(df2,
+                            x='站點名稱',
+                            y='總數',
+                            color='可還',
+                            size='可借')
+
         
     with st.sidebar:
         st.selectbox(":purple[請選擇行政區:]",options=areas,on_change=area_change,key='sarea')
