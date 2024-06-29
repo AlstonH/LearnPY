@@ -14,7 +14,7 @@ else:
     data = root.model_dump()
     areas:list[str] = list(set(map(lambda value:value['行政區'],data)))
     
-    st.title("台北市youbike各行政區站點資料")
+    st.title("新北市youbike各行政區站點資料")
     tableContainer = st.container()
     
     def area_change():
